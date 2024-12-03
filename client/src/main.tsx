@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import App from "./App.tsx";
 import "./index.css";
+
 import Cancel from "./pages/Cancel.tsx";
 import Cart from "./pages/Cart.tsx";
 import Category from "./pages/Category.tsx";
