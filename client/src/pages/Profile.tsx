@@ -10,6 +10,7 @@ import Loading from "../ui/Loading";
 const Profile = () => {
   const { currentUser, getUserInfo, isLoading } = store();
   useEffect(() => {
+    // check if user is available -- 
     const unSub = onAuthStateChanged(auth, (user) => {
       getUserInfo(user?.uid);
     });

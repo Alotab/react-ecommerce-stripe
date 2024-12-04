@@ -3,6 +3,8 @@ import { store } from "../lib/store";
 import FavoriteProduct from "../ui/FavoriteProduct";
 import { Link } from "react-router-dom";
 
+
+
 const Favorite = () => {
   const { favoriteProduct } = store();
   return (
