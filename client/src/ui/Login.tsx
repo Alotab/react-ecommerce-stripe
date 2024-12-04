@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Label from "./Label";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../lib/firebase";
-import Loading from "./Loading";
+import Loading from "./Loading ";
+import Label from "./Label ";
 
 const Login = ({ setLogin }: { setLogin: any }) => {
   const [loading, setLoading] = useState(false);
