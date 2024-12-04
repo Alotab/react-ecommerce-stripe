@@ -12,7 +12,7 @@ import {
   import { store } from "../lib/store";
   import Container from "../ui/Container";
   import FormattedPrice from "../ui/FormattedPrice";
-  import Loading from "../ui/Loading";
+  import Loading from "../ui/Loading ";
   
   const Orders = () => {
     const { currentUser } = store();

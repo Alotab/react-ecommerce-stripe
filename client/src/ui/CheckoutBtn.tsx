@@ -5,11 +5,15 @@ import { config } from "../../config";
 
 const CheckoutBtn = ({ products }: { products: ProductProps[] }) => {
   const { currentUser } = store();
+
+  // const publishableKey = process.env.STRIPE_PUBLIC_KEY;
+  // const stripePromise = loadStripe(publishableKey)
   const publishableKey = "pk_test_51QRWRWAQldRtJyUcVDMn7ckHkDKIhnM1OXzNyU7EiZFzBgyVAdNUmx05CfBVD29Npawd2V4XyfIMtrtqhBpcwFFN00rBn0cu9q";
   const stripePromise = loadStripe(publishableKey);
 
   const handleCheckout = async () => {
     const stripe = await stripePromise;
+    console.log('STRIPE', stripe);
     const response = await fetch(`${config?.baseUrl}/checkout`, {
       method: "POST",
       headers: {

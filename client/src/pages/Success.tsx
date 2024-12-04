@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import { arrayUnion, doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
 import { db } from "../lib/firebase";
 import Container from "../ui/Container";
-import Loading from "../ui/Loading";
+import Loading from "../ui/Loading ";
 
 const Success = () => {
   const { currentUser, cartProduct, resetCart } = store();
@@ -65,7 +65,7 @@ const Success = () => {
         <h2 className="text-2xl md:text-4xl font-bold text-center">
           {loading
             ? "Your order payment is processing"
-            : "Your Payment Accepted by supergear.com"}
+            : "Your Payment Accepted by React Ecommerce"}
         </h2>
         <p>
           {loading ? "Once done" : "Now"} you can view your Orders or continue

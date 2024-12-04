@@ -4,8 +4,8 @@ import { getData } from "../lib";
 import Carousel from "react-multi-carousel";
 import { CategoryProps } from "../../type";
 import { Link } from "react-router-dom";
-import CustomRightArrow from "./CustomRightArrow";
-import CustomLeftArrow from "./CustomLeftArrow";
+import CustomLeftArrow from "./CustomerLeftArrow";
+import CustomRightArrow from "./CustomeRightArrow";
 
 const responsive = {
   superLargeDesktop: {

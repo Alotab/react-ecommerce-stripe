@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { config } from "../../config";
 import { ProductProps } from "../../type";
 import { getData } from "../lib";
-import Loading from "../ui/Loading";
+import Loading from "../ui/Loading ";
 import Container from "../ui/Container";
 import _, { divide } from "lodash";
 import PriceTag from "../ui/PriceTag";

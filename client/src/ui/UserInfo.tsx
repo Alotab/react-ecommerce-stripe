@@ -4,7 +4,7 @@ import { auth } from "../lib/firebase";
 import Container from "./Container";
 
 const UserInfo = ({ currentUser }: UserTypes) => {
-  console.log(currentUser);
+  // console.log(currentUser);
 
   return (
     <Container className="py-5 text-white">

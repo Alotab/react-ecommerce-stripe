@@ -5,7 +5,7 @@ import { store } from "../lib/store";
 import Container from "../ui/Container";
 import Registration from "../ui/Registration";
 import UserInfo from "../ui/UserInfo";
-import Loading from "../ui/Loading";
+import Loading from "../ui/Loading ";
 
 const Profile = () => {
   const { currentUser, getUserInfo, isLoading } = store();
