@@ -1,12 +1,13 @@
 import React from "react";
 import Container from "./Container";
 
+
 const FooterTop = () => {
   const incentives = [
     {
       name: "Free shipping",
       imageSrc:
-        "https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg",
+        "https://www.svgrepo.com/svg/521229/shipping-truck",
       description:
         "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
     },

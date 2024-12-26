@@ -7,7 +7,7 @@ import {
   Transition,
 } from "@headlessui/react";
 import { FaChevronDown } from "react-icons/fa";
-import { FiShoppingBag, FiStar, FiUser } from "react-icons/fi";
+import { FiShoppingBag, FiStar, FiUser, FiUserPlus } from "react-icons/fi";
 import { IoClose, IoSearchOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { logo } from "../assets";
@@ -17,6 +17,7 @@ import { getData } from "../lib";
 import { CategoryProps, ProductProps } from "../../type";
 import ProductCard from "./ProductCard";
 import { store } from "../lib/store";
+
 
 const bottomNavigation = [
   { title: "Home", link: "/" },
@@ -118,17 +119,18 @@ const Header = () => {
 
         {/* Menubar */}
         <div className="flex items-center gap-x-6 text-2xl">
+
           <Link to={"/profile"}>
             {currentUser ? (
-              <img
-                src={currentUser?.avatar}
-                alt="profileImg"
-                className="w-10 h-10 rounded-full object-cover"
-              />
+              <>
+                <FiUserPlus className="hover:text-skyText duration-200 cursor-pointer" />
+              
+              </>
             ) : (
               <FiUser className="hover:text-skyText duration-200 cursor-pointer" />
             )}
           </Link>
+
           <Link to={"/favorite"} className="relative block">
             <FiStar className="hover:text-skyText duration-200 cursor-pointer" />
             <span className="inline-flex items-center justify-center bg-redText text-whiteText absolute -top-1 -right-2 text-[9px] rounded-full w-4 h-4">
@@ -196,3 +198,14 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+{/* <img
+  src={
+    currentUser?.avatar
+      ? currentUser?.avatar
+      : "https://i.ibb.co/mJRkRRV/png-clipart-profile-logo-computer-icons-user-user-blue-heroes-thumbnail.png"
+  }
+/> */}

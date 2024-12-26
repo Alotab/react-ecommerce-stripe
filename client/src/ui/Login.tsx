@@ -13,6 +13,7 @@ const Login = ({ setLogin }: { setLogin: any }) => {
       setLoading(true);
       const formData = new FormData(e.target);
       const { email, password }: any = Object.fromEntries(formData);
+      // console.log('auth:', auth);
 
       await signInWithEmailAndPassword(auth, email, password);
     } catch (error: any) {
@@ -48,7 +49,7 @@ const Login = ({ setLogin }: { setLogin: any }) => {
       >
         <div className="border-b border-b-white/10 pb-5">
           <h2 className="text-lg font-semibold uppercase leading-7">
-            Registration Form
+            Login
           </h2>
           <p className="mt-1 text-sm leading-6 text-gray-400">
             You need to provide required information to get register with us.

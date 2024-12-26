@@ -9,24 +9,13 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-
-  apiKey: "AIzaSyAt5ygg-2gbt2oo1dkKjv4hGK9A8sI_Umc",
-
-  authDomain: "react-ecommerce-stripe-4b0ce.firebaseapp.com",
-
-  projectId: "react-ecommerce-stripe-4b0ce",
-
-  storageBucket: "react-ecommerce-stripe-4b0ce.firebasestorage.app",
-
-  messagingSenderId: "85034116348",
-
-  appId: "1:85034116348:web:9a5ff47621e8e46b642379"
-
+  apiKey: "AIzaSyCzgw__DCgflCwenUJDIbuVOp9YYtHjJ2g",
+  authDomain: "supergearyt-dbb9e.firebaseapp.com",
+  projectId: "supergearyt-dbb9e",
+  storageBucket: "supergearyt-dbb9e.firebasestorage.app",
+  messagingSenderId: "638830890464",
+  appId: "1:638830890464:web:295271b1a3ef03d7392f85"
 };
-
-// Projectid: react-ecommerce-stripe-4b0ce
-// apiKey: AIzaSyADfTtvKORN3IHLwmYLu5davUSpy7rlvTw 
-
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);

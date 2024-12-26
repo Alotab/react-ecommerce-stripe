@@ -5,6 +5,7 @@ import { config } from "../../config";
 
 const CheckoutBtn = ({ products }: { products: ProductProps[] }) => {
   const { currentUser } = store();
+  console.log('current:', currentUser);
 
   // const publishableKey = process.env.STRIPE_PUBLIC_KEY;
   // const stripePromise = loadStripe(publishableKey)
