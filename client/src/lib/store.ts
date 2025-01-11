@@ -22,12 +22,14 @@ interface StoreType {
   currentUser: UserType | null;
   isLoading: boolean;
   getUserInfo: (uid: any) => Promise<void>;
+
   // cart
   cartProduct: CartProduct[];
   addToCart: (product: ProductProps) => Promise<void>;
   decreaseQuantity: (productId: number) => void;
   removeFromCart: (productId: number) => void;
   resetCart: () => void;
+  
   // // favorite
   favoriteProduct: CartProduct[];
   addToFavorite: (product: ProductProps) => Promise<void>;
